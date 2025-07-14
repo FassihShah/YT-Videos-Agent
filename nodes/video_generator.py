@@ -58,7 +58,7 @@ def generate_video(prompt: str) -> str:
             # Run gsutil command to download
             subprocess.run([GSUTIL_PATH, "cp", uri, filepath], check=True)
 
-            print(f"✅ Downloaded as {filepath}")
+            print(f"Downloaded as {filepath}")
             return filepath
 
         except subprocess.CalledProcessError as e:
