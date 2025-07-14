@@ -1,0 +1,33 @@
+# LangGraph and LangChain Core
+langgraph==0.0.38
+langchain-core==0.1.40
+
+# Google Generative AI SDK (Veo / Gemini)
+google-generativeai==0.4.0
+
+# LangChain Google GenAI support
+langchain-google-genai==0.0.8
+
+# Google Auth & YouTube API Client
+google-api-python-client==2.114.0
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+
+# Streamlit UI
+streamlit==1.35.0
+
+# Environment variable loading
+python-dotenv==1.0.1
+
+# HTTP requests
+requests==2.31.0
+
+# Output parsing & validation
+pydantic==2.7.1
+
+# SQLite support
+sqlite-utils==3.36
+sqlalchemy==2.0.30
+
+# Prompt templating & streaming
+langchain-core==0.1.40
