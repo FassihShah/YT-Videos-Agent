@@ -1,4 +1,4 @@
-# 🎬 YouTube Shorts Generator Agent (LangGraph + Veo 3 + Gemini)
+# 🎬 YouTube Shorts Generator Agent (LangGraph + Veo 3)
 
 An **AI-powered automation agent** that generates, approves, and uploads YouTube Shorts based on trending topics. Built using **LangGraph**, **Google Veo 3**, **Gemini Pro**, and **YouTube Data API v3**, this tool streamlines your content creation workflow — from idea to upload.
 
