@@ -54,59 +54,51 @@ An **AI-powered automation agent** that generates, approves, and uploads YouTube
 
 ## 🛠️ Technologies Used
 
-# LangGraph
+#### LangGraph
 - Manages agent workflow as a directed graph of nodes
 
-# Interrupts
+#### Interrupts
 - Pauses execution at key points (topic/video approval) for human-in-the-loop feedback
 
-# SQLite Checkpointing
+#### SQLite Checkpointing
 - Saves agent state between steps using SqliteSaver
 
-# Gemini Pro (Google Generative AI)
+#### Gemini Pro (Google Generative AI)
 - Generates creative prompts from trending topics
 
-# Veo 3 (Vertex AI)
+#### Veo 3 (Vertex AI)
 - Generates short videos using the prompt
 
-# YouTube Data API v3
+#### YouTube Data API v3
 - Uploads final video to your YouTube channel
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone Repository
-
+#### 1. Clone Repository
 ```bash
 git clone https://github.com/FassihShah/YT-Videos-Agent.git
 cd YT-Videos-Agent
 ```
-
-### 2. Create Virtual Environment
-
+#### 2. Create Virtual Environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate 
 ```
-
-### 3. Install Requirements
-
+#### 3. Install Requirements
 ```bash
 pip install -r requirements.txt
 ```
+#### 4. Create .env File
 
-### 4. Create .env File
-
-# .env file in root directory
+ .env file in root directory
 ```bash
 GOOGLE_API_KEY = your_gemini_or_veo_api_key
 GOOGLE_CLOUD_PROJECT = your_google_project_id
 VEO_BUCKET = your-veo-bucket
 ```
-
-### 5. Run the App
-
+#### 5. Run the App
 ```bash
   streamlit run main.py
 ```
@@ -115,7 +107,7 @@ VEO_BUCKET = your-veo-bucket
 
 ## 🔐 How to Setup APIs
 
-### Veo 3 API Setup (via Vertex AI)
+### - Veo 3 API Setup (via Vertex AI)
 
 1. Enable Vertex AI API
       - Go to: [Vertex AI API Console](https://console.cloud.google.com/marketplace/product/google/vertex-ai.googleapis.com)
@@ -131,7 +123,7 @@ VEO_BUCKET = your-veo-bucket
   VEO_BUCKET=your-gcs-bucket-name
   ```
 
-### YouTube Data API v3 (Fetch Trending topics and Upload Videos)
+### - YouTube Data API v3 (Fetch Trending topics and Upload Videos)
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project (or select one)
