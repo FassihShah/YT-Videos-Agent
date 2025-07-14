@@ -12,11 +12,9 @@ def final_logger(state: AgentState) -> AgentState:
     description = state.get("description", "")
     timestamp = datetime.now().isoformat(timespec="seconds")
 
-    # Define CSV file path
     csv_file = Path("video_logs.csv")
     file_exists = csv_file.exists()
 
-    # Prepare row to write
     row = {
         "Timestamp": timestamp,
         "Topic": topic,
@@ -25,7 +23,6 @@ def final_logger(state: AgentState) -> AgentState:
         "YouTube URL": url
     }
 
-    # Write to CSV (append mode)
     with open(csv_file, mode="a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=row.keys())
 
