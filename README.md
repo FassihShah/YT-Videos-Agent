@@ -1,4 +1,4 @@
-# 🎬 YouTube Shorts Generator Agent (LangGraph + Veo 3)
+# YouTube Shorts Generator Agent (LangGraph + Veo 3)
 
 An **AI-powered automation agent** that generates, approves, and uploads YouTube Shorts based on trending topics. Built using **LangGraph**, **Google Veo 3**, **Gemini Pro**, and **YouTube Data API v3**, this tool streamlines your content creation workflow — from idea to upload.
 
@@ -21,22 +21,22 @@ An **AI-powered automation agent** that generates, approves, and uploads YouTube
 
 ```bash
 │
-├── graph.py # LangGraph setup & compilation
-├── main.py # Streamlit UI entrypoint
-├── state_schema.py # Shared agent state definition
+├── graph.py   # LangGraph setup & compilation
+├── main.py   # Streamlit UI entrypoint
+├── state_schema.py   # Shared agent state definition
 │
 ├── nodes/
-│ ├── topic_selector.py # Trending topic logic
-│ ├── prompt_generator.py # Prompt generation using Gemini
-│ ├── video_generator.py # Video generation with Veo 3
-│ ├── video_uploader.py # YouTube video upload
-│ ├── metadata_generator.py # Title/desc generation using Gemini
-│ ├── final_logger.py # logging uploaded video data to csv
+│ ├── topic_selector.py   # Trending topic logic
+│ ├── prompt_generator.py   # Prompt generation using Gemini
+│ ├── video_generator.py   # Video generation with Veo 3
+│ ├── video_uploader.py   # YouTube video upload
+│ ├── metadata_generator.py   # Title/desc generation using Gemini
+│ ├── final_logger.py   # logging uploaded video data to csv
 │
-├── checkpoint.sqlite # LangGraph state DB
-├── video_logs.csv # Uploaded videos record
-├── requirements.txt # Python dependencies
-└── README.md # This file
+├── checkpoint.sqlite   # LangGraph state DB
+├── video_logs.csv   # Uploaded videos record
+├── requirements.txt   # Python dependencies
+└── README.md   # This file
 ```
 
 ---
