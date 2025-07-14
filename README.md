@@ -54,23 +54,15 @@ An **AI-powered automation agent** that generates, approves, and uploads YouTube
 
 ## 🛠️ Technologies Used
 
-#### LangGraph
-- Manages agent workflow as a directed graph of nodes
+| 🧩 Technology                 | 📝 Description                                                              |
+|-------------------------------|------------------------------------------------------------------------------|
+| **LangGraph**                 | Manages agent workflow as a directed graph of nodes                          |
+| **Interrupts**                | Pauses execution at key points (topic/video approval) for human feedback     |
+| **SQLite Checkpointing**      | Saves agent state between steps using `SqliteSaver`                          |
+| **Gemini Pro (Generative AI)**| Generates creative prompts from trending topics using Google's LLM           |
+| **Veo 3 (Vertex AI)**         | Generates short videos based on natural language prompts                     |
+| **YouTube Data API v3**       | Uploads the final approved video to your YouTube channel                     |
 
-#### Interrupts
-- Pauses execution at key points (topic/video approval) for human-in-the-loop feedback
-
-#### SQLite Checkpointing
-- Saves agent state between steps using SqliteSaver
-
-#### Gemini Pro (Google Generative AI)
-- Generates creative prompts from trending topics
-
-#### Veo 3 (Vertex AI)
-- Generates short videos using the prompt
-
-#### YouTube Data API v3
-- Uploads final video to your YouTube channel
 
 ---
 
